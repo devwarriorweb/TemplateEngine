@@ -1,0 +1,31 @@
+
+
+style.
+    /* Blinking cursor */
+    .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    }
+    @-webkit-keyframes blink {50%{opacity:0;}}
+    @keyframes blink {50%{opacity:0;}}
+
+script.
+    $(function(){
+    // more settings: https://github.com/mattboldt/typed.js/#customization
+    $(".typed").typed({
+    strings: ["developers", "designers", "entrepreneurs", "everyone"],
+    typeSpeed: 50,
+    backDelay: 2500,
+    loop: true,
+    shuffle: false
+    });
+    });
+
+<!-- Place a span with "typed" class inside a title -->
+
+           //- <div class="wrap fromTop">
+           //-     <h2 class="h2 large">Slides is a tool for <span class="typed"></span></h2>
+           //-  </div>
+
+
